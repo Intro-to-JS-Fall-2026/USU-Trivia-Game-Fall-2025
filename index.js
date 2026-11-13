@@ -1,4 +1,4 @@
-export function round4(points) {
+function round4(points) {
   const answer = prompt("Round 4: What is the name of USU's mascot?");
   if (answer !== null && answer.trim().toLowerCase() === "big blue") {
     alert("Correct! +10 points");
@@ -27,12 +27,11 @@ function round2(currentScore){
 
 }
 
-//export the function
-export {round2};
+
 // Nelson - Round 1: USU Trivia
 // This function asks a trivia question and awards 10 points for a correct answer.
 
-export function round1(points) {
+function round1(points) {
     let answer = prompt("What is the name of Utah State University's mascot?");
 
     if (answer !== null && answer.trim().toLowerCase() === "big blue") {
@@ -44,7 +43,7 @@ export function round1(points) {
     }
 }
 // Write your functions here:
-export function round3(points) {
+function round3(points) {
     let gainPoints = 15;
     let newTotal = points + gainPoints;
     let answer = 'THISTLE';
@@ -57,6 +56,8 @@ export function round3(points) {
         return points;
     }
 }
+//export the function
+export {round1,round2,round3,round4};
 // 1) Each function should accept points as an input
 // 2) Each function should display a prompt quizzing the user on the correct answer to a piece of USU trivia (You choose the trivia question)
 // 3) If they answer correctly, return the input points + however many points you feel they deserve for being correct. 
